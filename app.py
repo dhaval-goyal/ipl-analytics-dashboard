@@ -119,3 +119,11 @@ else:
     st.markdown(f"## {page}")
     st.divider()
     st.warning("🚧 Under construction — coming soon!")
+
+pg = st.navigation([
+    st.Page("pages/home.py", title="Home"),
+    st.Page("pages/team_performance.py", title="Team Performance"),
+    st.Page("pages/batting_stats.py", title="Batting Stats"),
+    st.Page("pages/bowling_stats.py", title="Bowling Stats"),
+    st.Page("pages/venue_analysis.py", title="Venue Analysis"),  # ← ADD THIS
+])
